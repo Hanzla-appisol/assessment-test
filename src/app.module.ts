@@ -6,6 +6,7 @@ import { ConfigModule } from "@nestjs/config";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { UserModule } from "./user/user.module";
 import { VerificationModule } from "./verification/verification.module";
+import { UploadModule } from './upload/upload.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { VerificationModule } from "./verification/verification.module";
     }),
     UserModule,
     VerificationModule,
+    UploadModule,
   ],
   controllers: [AppController],
   providers: [AppService],
